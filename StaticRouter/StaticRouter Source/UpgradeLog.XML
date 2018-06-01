@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Router">
+</Property><Property Name="솔루션 파일" Value="C:\Users\window7\Desktop\A_6_hw3\A_6_hw3_code\Router\Router.sln">
+</Property><Property Name="사용자 옵션 파일" Value="C:\Users\window7\Desktop\A_6_hw3\A_6_hw3_code\Router\Router.suo">
+</Property><Property Name="Date" Value="2014년 6월 6일 금요일">
+</Property><Property Name="Time" Value="오후 21:01">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Router.sln" Description="파일을 C:\Users\window7\Desktop\A_6_hw3\A_6_hw3_code\Router\Router.sln.old(으)로 백업했습니다.">
+</Event><Event ErrorLevel="0" Project="" Source="Router.suo" Description="파일을 C:\Users\window7\Desktop\A_6_hw3\A_6_hw3_code\Router\Router.suo.old(으)로 백업했습니다.">
+</Event><Event ErrorLevel="0" Project="Router" Source="Router.vcproj" Description="Converting project file 'C:\Users\window7\Desktop\A_6_hw3\A_6_hw3_code\Router\Router.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Router" Source="Router.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Router" Source="Router.vcproj" Description="Done converting to new project file 'C:\Users\window7\Desktop\A_6_hw3\A_6_hw3_code\Router\Router.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Router" Source="Router.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Router.sln" Description="솔루션을 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="" Source="Router.sln" Description="Converted">
+</Event></UpgradeLog>

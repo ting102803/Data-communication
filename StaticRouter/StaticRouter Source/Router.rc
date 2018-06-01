@@ -1,0 +1,278 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\Router.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+// IDR_MAINFRAME           ICON                    "res\\Router.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "StaticRouter 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "StaticRouter, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_STATICROUTER_DIALOG DIALOGEX 0, 0, 506, 317
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "StaticRouter"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "종료",IDCANCEL,433,296,50,14
+    CONTROL         "",IDC_CACHE_TABLE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,300,30,174,79
+    CONTROL         "",IDC_PROXY_TABLE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,300,162,174,80
+    GROUPBOX        "ARP Cache Table",IDC_STATIC,292,19,191,116
+    PUSHBUTTON      "Delete",IDC_CACHE_DELETE,328,116,52,14
+    PUSHBUTTON      "Delete All",IDC_CACHE_DELETE_ALL,397,116,50,14
+    GROUPBOX        "ARP Proxy Table",IDC_STATIC,290,148,193,120
+    PUSHBUTTON      "Delete",IDC_PROXY_DELETE,301,249,50,14
+    PUSHBUTTON      "Delete All",IDC_PROXY_DELETE_ALL,362,249,50,14
+    PUSHBUTTON      "Add",IDC_PROXY_ADD,422,249,50,14
+    CONTROL         "",IDC_ROUTING_TABLE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,26,29,246,157
+    GROUPBOX        "Routing Table",IDC_STATIC,19,19,265,195
+    PUSHBUTTON      "Add",IDC_ROUTING_ADD,88,194,50,14
+    PUSHBUTTON      "Delete",IDC_ROUTING_DELETE,151,194,50,14
+    COMBOBOX        IDC_NIC1_COMBO,53,225,228,47,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_NIC2_COMBO,52,242,229,39,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "NIC 2",IDC_NIC2,27,243,22,14
+    LTEXT           "NIC 1",IDC_NIC1,27,226,25,14
+    GROUPBOX        "NIC Set",IDC_STATIC,19,213,265,97
+    PUSHBUTTON      "Set",IDC_NIC_SET_BUTTON,229,261,50,14
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,52,259,100,15
+    CONTROL         "",IDC_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,52,280,100,15
+    LTEXT           "NIC 1",IDC_NIC3,27,261,25,14
+    LTEXT           "NIC 2",IDC_NIC4,27,280,22,14
+END
+
+IDD_ROUTE_ADD_DLG DIALOGEX 0, 0, 180, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RoutTableAdder"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "추가",IDOK,39,126,50,14
+    PUSHBUTTON      "취소",IDCANCEL,97,126,50,14
+    LTEXT           "Destination",IDC_STATIC,16,17,37,8
+    LTEXT           "Netmask",IDC_STATIC,16,36,28,8
+    LTEXT           "Gateway",IDC_STATIC,16,55,30,8
+    LTEXT           "Flag",IDC_STATIC,16,73,14,8
+    LTEXT           "Interface",IDC_STATIC,16,91,31,8
+    LTEXT           "Metric",IDC_STATIC,16,110,19,8
+    CONTROL         "",IDC_DESTINATION_IPADDRESS,"SysIPAddress32",WS_TABSTOP,62,14,100,15
+    CONTROL         "",IDC_NETMASK_IPADDRESS,"SysIPAddress32",WS_TABSTOP,62,33,100,15
+    CONTROL         "",IDC_GATEWAY_IPADDRESS,"SysIPAddress32",WS_TABSTOP,62,52,100,15
+    CONTROL         "Up",IDC_UP_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,74,25,10
+    CONTROL         "Gateway",IDC_GATEWAY_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,88,74,45,10
+    CONTROL         "Host",IDC_HOST_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,75,31,10
+    COMBOBOX        IDC_INTERFACE_COMBO,63,91,99,56,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_METRIC_EDIT,63,109,43,12,ES_AUTOHSCROLL
+END
+
+IDD_PROXY_ADD DIALOGEX 0, 0, 224, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ProxyTableAdder"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,108,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,90,50,14
+    COMBOBOX        IDC_COMBO1,65,21,120,70,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,65,46,119,15
+    LISTBOX         IDC_LIST3,65,70,119,13,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Device",IDC_STATIC,20,23,37,11
+    LTEXT           "IP 주소",IDC_STATIC,18,48,37,11
+    LTEXT           "H/W 주소",IDC_STATIC,18,71,40,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "StaticRouter.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "StaticRouter.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_STATICROUTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 499
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    IDD_ROUTE_ADD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_PROXY_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "StaticRouter 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+//#include "res\Router.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
